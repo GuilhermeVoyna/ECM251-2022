@@ -1,0 +1,3 @@
+        String valorComVirgula = qrCode.split(";")[2];
+        String valorSemVirgula = valorComVirgula.replace(',', '.');
+        return Double.parseDouble(valorSemVirgula);

@@ -1,0 +1,11 @@
+public class Usuario {
+    private String nome;
+    private String senha;
+    private String email;
+    private Conta conta;
+    public Usuario(String nome, String senha, String email) {
+        this.nome = nome;
+        this.senha = senha;
+        this.email = email;
+        this.conta = new Conta();
+    }

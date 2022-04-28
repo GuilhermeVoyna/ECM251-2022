@@ -1,0 +1,5 @@
+String.format("%d;%s;%.2f;%d", 
+            idConta,
+            usuario, 
+            valor, 
+            numeroAleatorio);

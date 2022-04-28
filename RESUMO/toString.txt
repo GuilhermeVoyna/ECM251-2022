@@ -1,0 +1,4 @@
+    Integer.toString(i);
+    Double.toString(d);
+    float.toString(f)
+    boolean.toString(b);
