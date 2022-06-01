@@ -1,3 +1,5 @@
+import JOGOS.EnumGenero;
+
 public class Sistema {
 
     public static void run(){
@@ -17,7 +19,12 @@ public class Sistema {
         System.out.println(c1.getUsuario().getCarteira().getSaldo());
         System.out.println(c2.getUsuario().getCarteira().getSaldo());
 
+        
 
+
+        System.out.println();
+        
         System.out.println("\nFINALIZADO");
     }
+
 }

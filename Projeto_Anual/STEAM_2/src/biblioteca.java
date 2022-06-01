@@ -1,6 +1,10 @@
-public class biblioteca {
+public class Biblioteca {
     
+    public static void main(String[] args){
 
-    //criar um vetor? para adicionar jogos
-    //
+        //   ArrayList canetas = new ArrayList<Jogos>(); 
+
+
+    }
+    
 }

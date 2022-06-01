@@ -1,11 +1,11 @@
 public class Usuario {
     private Carteira carteira;
-    private biblioteca biblioteca;
+    private Biblioteca biblioteca;
 
 
     public Usuario() {
         this.carteira = new Carteira();
-        this.biblioteca=new biblioteca();
+        this.biblioteca=new Biblioteca();
     }
 
     public Carteira getCarteira() {
