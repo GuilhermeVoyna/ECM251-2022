@@ -30,16 +30,16 @@ public class BigBrothers extends Membro {
 
     private void NovoMembro(String funcao,String usuario,String email,Membro conta){
         if(funcao=="MobileMembers"){
-            new MobileMembers(usuario, email);
+            membros.add(new MobileMembers(usuario, email));
         }
         if(funcao=="HeavyLifters"){
-            new HeavyLifters(usuario, email);
+            membros.add(new HeavyLifters(usuario, email));
         }
         if(funcao=="ScriptGuys"){
-            new ScriptGuys(usuario, email);
+            membros.add(new ScriptGuys(usuario, email));
         }
         if(funcao=="BigBrothers"){
-            new BigBrothers(usuario, email);
+            membros.add(new BigBrothers(usuario, email));
         }
     }
 }
