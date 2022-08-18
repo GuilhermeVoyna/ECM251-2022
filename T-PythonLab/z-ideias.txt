@@ -1,0 +1,29 @@
+estoque
+
+carrinho
+
+produto
+
+pagamento
+    cartao
+        credito
+        debito
+    boleto
+    pix
+
+cupom
+
+conta 
+    comprador
+    vendedor
+        loja
+        representante
+    ADM
+
+usuario
+
+perfil(foto nome endereco)
+
+categoria (enum)
+
+lista de desejos
