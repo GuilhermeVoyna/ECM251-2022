@@ -1,4 +1,0 @@
-MAC os
-windows
-linux
-minecraft
