@@ -1,6 +1,3 @@
-from turtle import position
-
-
 class Carrinho():
     #Metodo Construtor
     def __init__(self):
@@ -16,6 +13,7 @@ class Carrinho():
 
     def get_quantidadede_itens(self):
         return len(self._itens)
+
     def adicionar(self,item):
         self._itens.append(item)
 

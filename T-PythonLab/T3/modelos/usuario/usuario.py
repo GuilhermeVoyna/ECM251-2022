@@ -1,3 +1,4 @@
+from traceback import print_stack
 class Usuario():
     def __init__(self, login, password):
         self._login=login
@@ -5,6 +6,24 @@ class Usuario():
         self.register()
 
     def register(self):
-        file=open("user.txt","a")
-        file.write("\n" + self._login + " "+ self._password)
-        file.close()
+        arquivo = open("user.txt","a")
+        user=self._login    
+        registrar=True
+
+        with open('user.txt') as f:
+            file=f.readlines()
+
+        for line in file:
+            if line.strip().split(" ")[0] == user: #pega so o usuario da linha
+                print ("Usuario ja foi criado")
+                registrar=False
+                break
+    
+
+        
+        if registrar :
+            password=self._password 
+            arquivo.write(user+" "+password+"\n") 
+            print("registrando")     
+        arquivo.close()
+
