@@ -17,13 +17,13 @@ class Usuario():
             if line.strip().split(" ")[0] == user: #pega so o usuario da linha
                 print ("Usuario ja foi criado")
                 registrar=False
-                break
-    
-
+                arquivo.close()
+                
         
         if registrar :
             password=self._password 
             arquivo.write(user+" "+password+"\n") 
-            print("registrando")     
+            print("registrando")
+            arquivo.close()     
         arquivo.close()
 

@@ -10,8 +10,7 @@ def login(user,password):
 
     for line in file:
         if line.strip().split(" ")[0] == user and line.strip().split(" ")[1] == password:
-            print("logou")
-            return 1
+            return user
 
     print("usuario ou senha errado")
     return 0
