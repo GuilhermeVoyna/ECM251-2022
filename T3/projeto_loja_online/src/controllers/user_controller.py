@@ -1,19 +1,11 @@
-from tkinter.font import names
-from unicodedata import name
-import streamlit as st
 from src.models.user import User
-
-from pathlib import Path
-
-import streamlit_authenticator as stauth
-
 
 class UserController():
     def __init__(self):
         # Carrega os dados dos usuários
         self.users = [
-            User(name="Joao",username="ratin0", password = "123", email = "damian@wayneenterprises.com"),
-            User(name="Fausto",username="batman", password = "456", email = "joao2@gmail.com"),
+            User(name="Joao",username="ratinh0", password = "123", email = "damian@wayneenterprises.com"),
+            User(name="Fausto",username="batman", password = "4567", email = "joao2@gmail.com"),
             User(name="ADM",username="adm", password = "adm", email = "joao2@gmail.com")
         ]
     

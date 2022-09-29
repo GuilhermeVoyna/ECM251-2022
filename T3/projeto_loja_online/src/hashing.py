@@ -6,7 +6,6 @@ from src.controllers.user_controller import UserController
 
 if True:
         passwords=UserController.get_passwords(UserController()) #pegando as senhas para hashing
-        print(passwords)
         hashed_passwords = stauth.Hasher(passwords).generate()
 
         file_path = Path(__file__).parent / "hashed_pw.pkl"
