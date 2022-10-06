@@ -163,9 +163,9 @@ if authentication_status:
             st.markdown("***")
 
             col1, col2, col3,col4 = st.columns(4,gap="large")
-            col1.markdown("### Product")
+            col1.markdown("### Item")
             col2.markdown("### Price")
-            col3.markdown("### Quantidade")
+            col3.markdown("### Unities")
         
             
             
