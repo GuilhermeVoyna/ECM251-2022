@@ -153,7 +153,7 @@ if authentication_status:
     
     # teste
 
-    def novo_carro():
+    def car():
         st.session_state["Cart"] = CartController()
 
     # --- Cart area ---
@@ -191,13 +191,13 @@ if authentication_status:
                 for i in range(len(product_names)):
                     c.markdown(f"#### {product_qtt[i]}")
             with col4:
-                c.button(label = f"Clear", key = 666, on_click= novo_carro)
+                c.button(label = f"Clear", key = 666, on_click= car)
 
 
             st.markdown("***")
             valor_total = st.session_state["Cart"].get_total_price()
             st.markdown(f"## Total: ${valor_total:.3f} \n you have to pay in dollars 🤑")
             c1 = st.container()
-            c1.button(label = f"Pay", key = 6666, on_click= novo_carro)
+            c1.button(label = f"Pay", key = 6666, on_click= car)
             st.markdown("***")
                         
